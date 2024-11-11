@@ -1,12 +1,12 @@
 // Base class
-public class Animal {
+ class Animal {
     public void sound() {
         System.out.println("Animal sound");
     }
 }
 
 // Derived class Dog overriding the sound method
-public class Dog extends Animal {
+ class Dog extends Animal {
     @Override
     public void sound() {
         System.out.println("Dog barks");
@@ -14,14 +14,14 @@ public class Dog extends Animal {
 }
 
 // Derived class Cat overriding the sound method
-public class Cat extends Animal {
+ class Cat extends Animal {
     @Override
     public void sound() {
         System.out.println("Cat meows");
     }
 }
 
-public class MethodOverriding {
+ class MethodOverriding {
     public static void main(String[] args) {
         Animal myDog = new Dog();
         Animal myCat = new Cat();
